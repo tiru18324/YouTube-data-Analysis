@@ -18,9 +18,10 @@ and relationship between video title naming & number of views using linear regre
 
 ## 1.	Performing Sentiment Analysis: 
 
-It depends on 2 factors mainly,
-              1. Polarity 
-              2. Subjectivity.
+       It depends on 2 factors mainly:
+        
+                   1. Polarity 
+                   2. Subjectivity.
  1. Polarity carries a sentiment in it can be a positive or negative polarity with a range of [-1,1]  
  2.	Subjectivity does not carry any sentiment in it. 
  3. textblob is one of package which we will be using. It is a NLP  library.
@@ -29,10 +30,11 @@ It depends on 2 factors mainly,
 ## 2.	Using Wordcloud For Postive and Negative Sentences:
       
       
-  The bigger the font is the higher the priority it gets added to it. We create 2 sets of comments 
-              1.comments_positive (1)
-              2.comments_negative (-1) 
-           TextBlob('trending 😉').sentiment 
+        The bigger the font is the higher the priority it gets added to it. We create 2 sets of comments 
+                
+                  1.comments_positive (1)
+                  2.comments_negative (-1) 
+ > TextBlob('trending 😉').sentiment 
 * We use textblob to get the polarity and apply this our main dataframe passing comment_text to texblob such that we will get postive and negative comments 
 * we will join all the postive comments as single string and pass it to the wordcloud 
 
